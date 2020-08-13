@@ -1,46 +1,29 @@
-let num = 50;
+/*let calc = function(a, b) {
+    return (a + b);
+};
 
-/*if (num < 49) {
-    console.log("false");
-} else if (num > 100) {
-    console.log("num > 100");
-} else {
-    console.log("true");
+
+
+function returnVar() {
+    let num = 50;
+    return num;
 }
 
-(num < 49) ? console.log("false") : console.log("true");
+let anotherNum = returnVar();
+console.log(anotherNum);
 
-switch (num) {
-    case num < 49:
-        console.log("false");
-        break;
-    case num > 100:
-        console.log("num > 100");
-        break;
-    case num > 80:
-        console.log("num > 80");
-        break;
-    case 50:
-        console.log("true");
-        break;
-    default:
-        console.log("EROR");
-        break;
-} */
+let calc = (a,b) => a+b;
 
-/*while (num < 55) {
-    console.log(num);
-    num++;
-}
+console.log(calc(10, 5));
+console.log(calc(10, 510));
 
-do {
-    console.log(num);
-    num++;
-} while (num < 55); */
+let str = "teST";
+console.log(str.length);
 
-for (let i = 1; i < 8; i++) {
-    if (i == 6) {
-        continue;
-    }
-    console.log(i);
-}
+console.log(str.toUpperCase());
+console.log(str.toLowerCase());*/
+
+let twelve = "12.2px";
+
+console.log(parseInt(twelve));
+console.log(parseFloat(twelve));
