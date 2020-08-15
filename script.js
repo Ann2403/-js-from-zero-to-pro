@@ -1,29 +1,36 @@
-/*let calc = function(a, b) {
-    return (a + b);
+let btn = document.querySelectorAll('button'),
+    wrap = document.querySelector('.wrapper'),
+    link = document.querySelector('a');
+/*btn[0].onclick = function() {
+    alert('btn');
 };
 
+btn[0].onclick = function() {
+    alert('btn too');
+};
 
+btn[0].addEventListener('mouseenter', function() {
+    alert ('btn 1');
+});
 
-function returnVar() {
-    let num = 50;
-    return num;
-}
+btn[0].addEventListener('click', function(event) {
+    console.log(event);
+    let target = event.target;
+    target.style.display = 'none';
+    console.log('event: ' + event.type + ' on element ' + event.target);
+});
 
-let anotherNum = returnVar();
-console.log(anotherNum);
+wrap.addEventListener('click', function() {
+    console.log('event: ' + event.type + ' on element ' + event.target);
+});*/
 
-let calc = (a,b) => a+b;
+link.addEventListener('click', function(event) {
+    event.preventDefault();
+    console.log('event: ' + event.type + ' on element ' + event.target);
+});
 
-console.log(calc(10, 5));
-console.log(calc(10, 510));
-
-let str = "teST";
-console.log(str.length);
-
-console.log(str.toUpperCase());
-console.log(str.toLowerCase());*/
-
-let twelve = "12.2px";
-
-console.log(parseInt(twelve));
-console.log(parseFloat(twelve));
+btn.forEach(function(item) {
+    item.addEventListener('mouseleave', function() {
+        console.log('Exit');
+    });
+});
