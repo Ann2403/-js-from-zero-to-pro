@@ -1,0 +1,37 @@
+/*new RegExp('pattern', 'flags');
+            /pattern/flags
+  метод search всегда имет одно совпадение -> флаг g не получится использовать, а с match получаем массив 
+Флаги
+i - ищет не в зависимоти от регистра
+g - глобальность, не только первое вхождение но и все остальные
+m - многострочность
+. - замена всего
+
+Классы:
+\d - цифры \D не число
+\w - слова \W - не буква
+\s - пробелы \S - не пробел   
+*/
+
+/*let ans = prompt('You name');
+let reg = /n/gi;
+
+console.log(ans.search(reg));
+console.log(ans.match(reg));
+console.log(reg.test(ans));
+
+
+let pass = prompt('You password');
+
+console.log(pass.replace(/./g, '*'));
+alert('12-34-56'.replace(/-/g, ':'));
+
+
+let ans = prompt('You number');
+let reg = /\d/g;
+console.log(ans.match(reg));*/
+
+let str = 'My name is/ R2D2';
+
+console.log(str.match(/\w\d\w\d/i));
+console.log(str.match(/\//i));

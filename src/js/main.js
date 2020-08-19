@@ -23,9 +23,9 @@ let startBtn = document.querySelector('#start'),
     yearValue = document.querySelector('.year-value'),
     monthValue = document.querySelector('.month-value'),
     dayValue = document.querySelector('.day-value'),
-    money, time;
+    money, time,
 
-    let appDate = {
+    appDate = {
         budget: money,
         timeData: time,
         expenses: { },

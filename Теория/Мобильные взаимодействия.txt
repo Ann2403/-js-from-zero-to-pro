@@ -1,0 +1,29 @@
+//touchstart - событие клика пальца по экрану
+//touchmove - событие перемещения по экрану
+//touchend - удаление пальца с экрана
+//touchenter - палец заходит на элемент
+//touchleave - палец покидает элемент
+//touchcansel - палец выходит за пределы браузера
+
+window.addEventListener('DOMContentLoaded', function() {
+    let box = document.querySelector('.box');
+
+    /*box.addEventListener('touchstart', function(e) {
+        e.preventDefault();
+        console.log('Red box: touchstart');
+        console.log(e.target);
+        console.log(e.touches[0].target); //регистрация всех пальцев которые были использованы
+        console.log(e.changedTouches); //аналогично
+        console.log(e.targetTouches); //лишь те пальцы которые взаимодействуют с данным элементом
+    });*/
+
+    box.addEventListener('touchmove', function(e) {
+        e.preventDefault();
+        console.log('Red box: ' + e.touches[0].pageX);
+    });
+
+    /*box.addEventListener('touchend', function(e) {
+        e.preventDefault();
+        console.log('Red box: touchend');
+    });*/
+});
