@@ -1,0 +1,44 @@
+//обьявление переменных
+let box = document.querySelector('.prokrutka'),
+    btn = document.querySelector('button');
+
+**********размер блокa (без учета прокрутки)**********
+let width = box.clientWidth,
+     height = box.clientHeight;
+
+**********размер блока (с учетом прокрутки и padding, border)**********
+let width = box.offsetWidth,
+    height = box.offsetHeight;
+
+**********размер контента (без учета прокрутки)**********
+let width = box.scrollWidth,
+    height = box.scrollHeight;
+
+console.log(width);
+console.log(height);
+
+**********получение координат блока**********
+console.log(box.getBoundingClientRect().left);
+
+**********получение высоты (от строки URL до консоли) и ширины документа:**********
+console.log(document.documentElement.clientWidth);
+console.log(document.documentElement.clientHeight);
+
+//при клике на кнопку
+btn.addEventListener('click', function() {
+    //становится видимым весь контент
+    box.style.height = box.scrollHeight + 'px';
+    //невидимая область прокрутки сверху
+    box.scrollTop = 0;
+});
+
+                              ПЕРЕМЕЩЕНИЯ ПО СТРАНИЦЕ
+
+**********пермещение вверх страницы:**********
+document.documentElement.scrollTop = 0;
+
+**********перемещаем относительно нашего расположения:**********
+scrollBy(0, 200); - перемещаем на  200рх вниз
+
+**********перемещение в указаные координаты:**********
+scrollTo(x, y) 

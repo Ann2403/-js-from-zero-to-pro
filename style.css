@@ -5,7 +5,7 @@
     background-color: blue;
   }
 
-  button {
+  /* button {
       width: 80px;
       height: 30px;
       margin-top: 10px;
@@ -15,7 +15,7 @@
       color: #fff;
       cursor: pointer;
       outline: none;
-  }
+  } */
   
   .circle {
       width: 80px;
@@ -92,4 +92,20 @@
 
 .btn-block {
     background-color: yellow;
+}
+
+.prokrutka {
+    height: 350px; /* высота нашего блока */
+    width: 400px; /* ширина нашего блока */
+    overflow: scroll; /* прокрутка по вертикали */
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
 }
