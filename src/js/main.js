@@ -1,3 +1,4 @@
+//обьявление переменных
 let startBtn = document.querySelector('#start'),
     budgetValue = document.getElementsByClassName('budget-value')[0],
     daybudgetValue = document.getElementsByClassName('daybudget-value')[0],
